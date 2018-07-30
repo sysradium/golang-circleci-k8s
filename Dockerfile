@@ -16,3 +16,5 @@ RUN curl -Lo ${HELM_FILENAME} "https://kubernetes-helm.storage.googleapis.com/${
     tar zxf ${HELM_FILENAME} linux-amd64/helm && \
     chmod +x linux-amd64/helm && \
     sudo mv linux-amd64/helm /usr/local/bin/
+
+ADD deploy.sh /deploy.sh
