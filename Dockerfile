@@ -17,4 +17,6 @@ RUN curl -Lo ${HELM_FILENAME} "https://kubernetes-helm.storage.googleapis.com/${
     chmod +x linux-amd64/helm && \
     sudo mv linux-amd64/helm /usr/local/bin/
 
+RUN curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
+
 ADD deploy.sh /deploy.sh
