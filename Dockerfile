@@ -1,4 +1,4 @@
-FROM circleci/golang:1.10
+FROM circleci/golang:1.11
 
 ENV DOCKER_VERSION 17.03.0-ce
 ENV K8S_VERSION v1.9.0
